@@ -2,4 +2,5 @@
 
 echo "all variables shown $@"
 echo "number of variables shown: $#"
-echo "don't know $0"
+echo "name of the script $0"
+echo "The present working directory $PWD"
