@@ -1,9 +1,9 @@
 # !/bin/bash
 
-dog=$User
-if [ $user ne 0 ]
+dog=$(id -u)
+if [ $dog ne 0 ]
 then
-    echo "it is not an super user"
+    echo "it is not an super user or root user"
 fi
   
 dnf install mysql -y
