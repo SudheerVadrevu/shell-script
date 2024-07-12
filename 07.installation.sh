@@ -4,6 +4,7 @@ dog=$(id -u)
 if [ $dog -ne 0 ]
 then
     echo "it is not an super user or root user"
+    exit 1
 fi
   
 dnf install mysql -y
