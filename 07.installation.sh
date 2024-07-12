@@ -8,4 +8,4 @@ fi
   
 dnf install mysql -y
 
-echo "this is alo running"
+echo "this is not running"
