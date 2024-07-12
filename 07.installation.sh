@@ -7,3 +7,5 @@ then
 fi
   
 dnf install mysql -y
+
+echo "this is alo running"
