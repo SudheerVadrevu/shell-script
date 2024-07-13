@@ -4,7 +4,7 @@ dog=$(id -u)
 
 DATE=$(date +%F-%H-%M-%S)
 SCRIPT=$(echo $0 | cut -d "." -f1) #"echo $0" means current name of the script and when we run the command 
-                              #inside the script we have to give inside (...)
+                                   #inside the script we have to give inside (...)
 LOGS=/tmp/$SCRIPT-$DATE.log
 
 valid() {   
