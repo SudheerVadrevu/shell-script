@@ -2,12 +2,13 @@
 
 dog=$(id -u)
 
+DATE=$(date+%F-%H-%M-%S)
+SCRIPT=$(echo $0 | cut -d "." -f1) #"echo $0" means current name of the script and when we run the command 
+                              #inside the script we have to give inside (...)
+LOGS=/tmp/$SCRIPT-$DATE .log
+
 valid() {   
-    if [ $1 -ne 0 ]   # ippudu $1 ante anti? $1 implies to the below 'valid function' 1st value or input 
-                       #adhe $? . So $? means 0 . 0 means sucess so now here if statement if $1 is not
-                       # equal to 0 then it goes into if statement otherwise continue with else.if not
-                       # zero then it will goes into if statement and print $2 that means "installing sql"
-                       # it will print "installing sql Failure"
+    if [ $1 -ne 0 ]   
     then
         echo " $2  Failure"
     else
@@ -23,8 +24,8 @@ then
     exit 1
 fi
   
-dnf install mysql -y
+dnf install mysql -y &>>$LOGS
 valid $? "Installing mysql" 
 
-dnf install git -y
+dnf install git -y &>>$LOGS
 valid $? "Installing git" 
