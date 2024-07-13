@@ -24,8 +24,8 @@ then
     exit 1
 fi
   
-dnf install mysql -y &>>$LOGS
+dnf install mysql -y &>> $LOGS
 valid $? "Installing mysql" 
 
-dnf install git -y &>>$LOGS
+dnf install git -y &>> $LOGS
 valid $? "Installing git" 
