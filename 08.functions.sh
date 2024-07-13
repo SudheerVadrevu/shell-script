@@ -2,10 +2,10 @@
 
 dog=$(id -u)
 
-DATE=$(date+%F-%H-%M-%S)
+DATE=$(date +%F-%H-%M-%S)
 SCRIPT=$(echo $0 | cut -d "." -f1) #"echo $0" means current name of the script and when we run the command 
                               #inside the script we have to give inside (...)
-LOGS=/tmp/$SCRIPT-$DATE .log
+LOGS=/tmp/$SCRIPT-$DATE.log
 
 valid() {   
     if [ $1 -ne 0 ]   
