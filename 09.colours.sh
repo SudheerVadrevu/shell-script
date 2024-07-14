@@ -37,4 +37,4 @@ dnf install git -y &>>$LOGS
 valid $? "Installing git" 
 
 dnf install rubbbb -y &>>$LOGS
-valid $? "Installing git" 
+valid $? "Installing some stupid package" 
