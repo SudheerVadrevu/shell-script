@@ -6,19 +6,19 @@ SCRIPT=$(echo $0 | cut -d "." -f2) #"echo $0" means current name of the script a
                                    #inside the script we have to give inside (...)
 LOGS=/tmp/$SCRIPT-$DATE.log
 
-#R="\e[31m"
-#G="\e[32m"
-#N="\e[0m"
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
 
 echo "Script started executing at: $TIMESTAMP"
 valid() {   
 
     if [ $1 -ne 0 ]   
     then
-        echo " $2  Failure " 
+        echo -e " $2 $R Failure $N" 
         exit 1
     else
-        echo "$2 is Success "
+        echo -e "$2  $G is Success $N"
     fi
          
 
