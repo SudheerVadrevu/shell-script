@@ -7,7 +7,7 @@ SCRIPT=$(echo $0 | cut -d "." -f2) #"echo $0" means current name of the script a
 LOGS=/tmp/$SCRIPT-$DATE.log
 
 R="\e[31m"
-G="\e[34m"
+G="\e[32m"
 N="\e[0m"
 
 echo "Script started executing at: $TIMESTAMP"
