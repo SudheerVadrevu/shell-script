@@ -30,7 +30,11 @@ then
     exit 1
 fi
   
+dnf install mysql -y &>>$LOGS
+valid $? "Installing mysql" 
 
-mysql_secure_installation --set-root-pass ExpenseApp@1 
-valid $? "Setting up root password"
+dnf install git -y &>>$LOGS
+valid $? "Installing git" 
 
+dnf install rubbbb -y &>>$LOGS
+valid $? "Installing some stupid package" 
