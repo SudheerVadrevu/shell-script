@@ -39,7 +39,7 @@ valid $? "Installing git"
 dnf install mysql-server -y 
 valid $? "Installing MySQL Server"
 
-systemctl enable mysqld 
+systemctl enable mysqldddd
 valid $? "Enabling MySQL Server"
 
 systemctl start mysqld 
