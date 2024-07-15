@@ -37,14 +37,14 @@ dnf install git -y &>>$LOGS
 valid $? "Installing git" 
 
 dnf install mysql-server -y &>>$LOGS
-VALIDATE $? "Installing MySQL Server"
+valid $? "Installing MySQL Server"
 
 systemctl enable mysqld &>>$LOGS
-VALIDATE $? "Enabling MySQL Server"
+valid $? "Enabling MySQL Server"
 
 systemctl start mysqld &>>$LOGS
-VALIDATE $? "Starting MySQL Server"
+valid $? "Starting MySQL Server"
 
 mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGS
-VALIDATE $? "Setting up root password"
+valid $? "Setting up root password"
 
