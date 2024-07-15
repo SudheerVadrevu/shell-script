@@ -45,6 +45,6 @@ valid $? "Enabling MySQL Server"
 systemctl start mysqld &>>$LOGS
 valid $? "Starting MySQL Server"
 
-mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGS
+mysql_secure_installation --set-root-pass ExpenseApp@1 &>> $LOGS
 valid $? "Setting up root password"
 
