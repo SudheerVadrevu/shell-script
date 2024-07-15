@@ -36,5 +36,15 @@ valid $? "Installing mysql"
 dnf install git -y &>>$LOGS
 valid $? "Installing git" 
 
-dnf install rubbbb -y &>>$LOGS
-valid $? "Installing some stupid package" 
+dnf install mysql-server -y &>>$LOGFILE
+VALIDATE $? "Installing MySQL Server"
+
+systemctl enable mysqld &>>$LOGFILE
+VALIDATE $? "Enabling MySQL Server"
+
+systemctl start mysqld &>>$LOGFILE
+VALIDATE $? "Starting MySQL Server"
+
+mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGS
+VALIDATE $? "Setting up root password"
+
