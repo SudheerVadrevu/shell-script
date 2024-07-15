@@ -31,6 +31,6 @@ then
 fi
   
 
-mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGS
+mysql_secure_installation --set-root-pass ExpenseApp@1 
 valid $? "Setting up root password"
 
