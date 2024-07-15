@@ -30,21 +30,7 @@ then
     exit 1
 fi
   
-dnf install mysql -y &>>$LOGS
-valid $? "Installing mysql" 
 
-dnf install git -y &>>$LOGS
-valid $? "Installing git" 
-
-dnf install mysql-server -y &>>$LOGS
-valid $? "Installing MySQL Server"
-
-systemctl enable mysqld &>>$LOGS
-valid $? "Enabling MySQL Server"
-
-systemctl start mysqld &>>$LOGS
-valid $? "Starting MySQL Server"
-
-mysql_secure_installation --set-root-pass ExpenseApp@1 &>> $LOGS
+mysql_secure_installation --set-root-pass ExpenseApp@1 &>>$LOGS
 valid $? "Setting up root password"
 
