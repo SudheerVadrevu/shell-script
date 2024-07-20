@@ -5,6 +5,7 @@ sudheer="Hi, ra mava this is the first script"
 echo "This was the first script please read $sudheer"
 echo "the pid of the current script $$ "
 
-./12.secondtrial.sh
+#./12.secondtrial.sh
+source ./12.secondtrial.sh
 
 echo " After running the other script $sudheer"
