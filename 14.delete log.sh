@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 source_path=/tmp/app-logs
 
