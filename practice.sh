@@ -1,7 +1,7 @@
 #!/bin/bash
 
-Person1=Sindhura
-Person2=Sudheer
+Person1=$1
+Person2=$2
 
 echo "I love you ra  $Person1 "
 echo "Same to you ra $Person2 "
