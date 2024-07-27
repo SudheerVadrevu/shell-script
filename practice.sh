@@ -1,7 +1,10 @@
 #!/bin/bash
 
-sexywomans=("sindhu" "ramya" "divya")   #size of the array is 3 and index will be start counts from 
-                                        # 0,1,2
-echo "first lanja peru ${sexywomans[0]}"
-echo "second lanja peru ${sexywomans[1]}"
-echo "Third lanja peru ${sexywomans[2]}}" 
+echo "all the variables is $@"
+echo "Number of variables is $#"
+echo "Present working directory $PWD"
+echo "Home directory : $HOME"
+echo "The user who was writing this script $USER"
+echo "The name of the script $0"
+echo "Host name is $HOSTNAME"
+echo "the process id of the script $$"
