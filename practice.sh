@@ -1,10 +1,7 @@
 #!/bin/bash
 
-Person1=$1
-Person2=$2
-
-echo "I love you ra  $Person1 "
-echo "Same to you ra $Person2 "
-echo "Appudu chedam ra sex $Person1"
-echo "ippude bathroom lo $Person2"
-
+echo "Give me the correct username"
+read -s username
+echo "Give me the password "
+read -s password
+echo "the username is the $username and password is the $password"
