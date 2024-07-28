@@ -3,8 +3,12 @@
 Sudheer=$(id -u)
 sexy()
 {
-    echo "exit status enti $1 "
-    echo "installed  $2"
+if [ $1 -ne 0 ]
+then
+    echo "it was not installed"
+else
+    echo " $2 it was installed"
+fi
 }
 if [ $Sudheer -ne 0 ]
 then
