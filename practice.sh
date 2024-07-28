@@ -1,7 +1,7 @@
 #!/bin/bash
 
 Sudheer=$(id -u)
-date=$(date+%F-%H-%M-%S)
+date=$(date +%F-%H-%M-%S)
 vinni=$(echo $0| cut -d "." -f2 )
 logs=/tmp/$date-$vinni.log
 
@@ -12,6 +12,7 @@ sexy()
         echo "$1 Some thing error please check the installation"
     else
         echo "$2 It was installed"
+    fi
 }
 if [ $Sudheer -ne 0 ]
 then
