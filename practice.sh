@@ -9,4 +9,5 @@ else
     echo "you are an super user"
 fi
 
-dnf install mysql -y
+dnf install git
+echo "Installing the git into the server"
