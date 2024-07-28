@@ -9,7 +9,7 @@ sexy()
 {
     if [ $1 -ne 0 ]
     then
-        echo "$1 Some thing error please check the installation"
+        echo "$2 Some thing error please check the installation"
     else
         echo "$2 It was installed"
     fi
