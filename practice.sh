@@ -8,4 +8,4 @@ else
     echo "you are an normal user"
 fi
 
-dnf install git
+dnf install gitsexy
