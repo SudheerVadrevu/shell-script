@@ -1,9 +1,11 @@
 #!/bin/bash
 
-Sudheer=40
-if [ $Sudheer -ge 30 ]
+Sudheer=$(id-u)
+if [ $Sudheer -ne 0 ]
 then
-    echo "sudheer is intelligent"
+    echo "you are not an super user"
 else
-    echo "sudheer is not an intelligent"
+    echo "you are an normal user"
 fi
+
+dnf install git
