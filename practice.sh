@@ -1,7 +1,11 @@
 #!/bin/bash
 
 Sudheer=$(id -u)
-echo $Sudheer
+sexy()
+{
+    echo "exit status enti $1 "
+    echo "installed  $2"
+}
 if [ $Sudheer -ne 0 ]
 then
     echo "you are not an super user"
@@ -9,10 +13,7 @@ then
 fi
 
 dnf install nodejs -y
-if [ $? -ne 0 ]
-then
-    echo "Installing the ngnix into the server"
-fi
+sexy $? "nodejs"
 
-
-echo " After installing also it was continuing"
+dnf install nginx -y
+sexy $? "nginx"
