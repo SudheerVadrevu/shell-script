@@ -13,4 +13,6 @@ if [ $? -ne 0 ]
 then
     echo "Installing the ngnix into the server"
 fi
+
+
 echo " After installing also it was continuing"
