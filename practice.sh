@@ -5,6 +5,7 @@ sexy()
 {
 if [ $1 -ne 0 ]
 then
+    echo $1
     echo "it was not installed"
 else
     echo " $2 it was installed"
