@@ -16,7 +16,7 @@ then
     exit 1
 fi
 
-dnf install nodejs -y
+dnf install nodesjs -y
 sexy $? "nodejs"
 
 dnf install nginx -y
