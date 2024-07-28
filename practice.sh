@@ -9,5 +9,5 @@ else
     echo "you are an super user"
 fi
 
-dnf install git
+dnf install mangodb
 echo "Installing the git into the server"
