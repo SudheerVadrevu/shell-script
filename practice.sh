@@ -5,7 +5,7 @@ echo $Sudheer
 if [ $Sudheer -ne 0 ]
 then
     echo "you are not an super user"
-    exit 1
+    exit 0
 fi
 
 dnf install nodejs -y
