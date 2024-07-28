@@ -9,5 +9,5 @@ else
     echo "you are an super user"
 fi
 
-dnf install nginx -y
+dnf install nodejs -y
 echo "Installing the ngnix into the server"
