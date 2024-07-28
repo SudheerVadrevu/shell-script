@@ -5,11 +5,17 @@ date=$(date +%F-%H-%M-%S)
 vinni=$(echo $0| cut -d "." -f2 )
 logs=/tmp/$date-$vinni.log
 
+R="\e[31m"
+G="\e[32m"
+N="\e[0m"
+
+echo "Script started executing at: $TIMESTAMP"
+
 sexy()
 {
     if [ $1 -ne 0 ]
     then
-        echo "$2 Some thing error please check the installation"
+        echo "$2 $G Some thing error please check the installation"
     else
         echo "$2 It was installed"
     fi
