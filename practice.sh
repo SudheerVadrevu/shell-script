@@ -8,4 +8,4 @@ else
     echo "you are an normal user"
 fi
 
-dnf install gitsexy
+dnf install mysql -y
